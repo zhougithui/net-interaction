@@ -1,19 +1,13 @@
-package com.awake.net.test;
+package com.awake.net.test.jdk;
 
 import com.awake.net.bean.NetAwakeBean;
 import com.awake.net.jdk.JdkSerializeUtils;
+import com.awake.net.test.BaseTest;
 import junit.framework.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class JdkSerializeUtilsTest {
-    private static NetAwakeBean netAwakeBean = new NetAwakeBean();
+public class JdkSerializeUtilsTest extends BaseTest {
 
-    @BeforeClass
-    public static void init(){
-        netAwakeBean.setAge(20);
-        netAwakeBean.setName("awake man");
-    }
 
     @Test
     public void testSerializeAndDeserialize(){

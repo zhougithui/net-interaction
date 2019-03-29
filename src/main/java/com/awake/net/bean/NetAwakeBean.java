@@ -4,12 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.Map;
 
 @Setter
 @Getter
 public class NetAwakeBean implements Serializable {
     private String name;
     private int age;
+    private Map<String, NetAwakeBean> netAwakeBeanMap;
 
     @Override
     public int hashCode() {
